@@ -1,34 +1,46 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+## **How to install and run app**
 
-## Getting Started
+1. Clone repo:
 
-First, run the development server:
-
-```bash
-npm run dev
-# or
-yarn dev
+```
+git clone: git@gitlab.asoft-python.com:thuan.dang/react-training.git
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+2. Checkout branch:
 
-You can start editing the page by modifying `pages/index.tsx`. The page auto-updates as you edit the file.
+```
+git checkout feature/nextjs-example
+```
 
-[API routes](https://nextjs.org/docs/api-routes/introduction) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.ts`.
+3. Move to `ninja-list` folder:
 
-The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/api-routes/introduction) instead of React pages.
+```
+cd ninja-list
+```
 
-## Learn More
+4. Install package:
 
-To learn more about Next.js, take a look at the following resources:
+```
+pnpm install
+```
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+5. Start Project:
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+```
+pnpm dev
+```
 
-## Deploy on Vercel
+6. Run unit test and coverage:
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+```
+pnpm test && pnpm test:coverage
+```
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+7. See app:
+
+```
+Open localhost:3000 to see the website in the browser you use
+```
+
+## Deployment
+- https://ninja-self-omega.vercel.app/

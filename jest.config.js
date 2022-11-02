@@ -1,4 +1,6 @@
 module.exports = {
+  roots: ['<rootDir>/src'],
+  modulePaths: ['<rootDir>/src'],
   collectCoverage: true,
   // on node 14.x coverage provider v8 offers good speed and more or less good report
   coverageProvider: 'v8',
@@ -17,8 +19,9 @@ module.exports = {
     '^.+\\.(png|jpg|jpeg|gif|webp|avif|ico|bmp|svg)$/i': `<rootDir>/__mocks__/fileMock.js`,
 
     // Handle module aliases
-    '^@/components/(.*)$': '<rootDir>/components/$1',
-    '^@/pages/(.*)$': '<rootDir>/pages/$1',
+    '^@components/(.*)$': '<rootDir>/src/components/$1',
+    '^@pages/(.*)$': '<rootDir>/src/pages/$1',
+    '^@types/(.*)$': '<rootDir>/src/types/$1',
   },
   // Add more setup options before each test is run
   testPathIgnorePatterns: ['<rootDir>/node_modules/', '<rootDir>/.next/'],
